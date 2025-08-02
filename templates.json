@@ -7,5 +7,14 @@
         "init_commands": ["poetry install"]
       }
     }
+  },
+  "telegram-bot": {
+    "name": "Telegram бот",
+    "templates": {
+      "python-aiogram-empty": {
+        "name": "Telegram бот на Python (Aiogram 3)",
+        "init_commands": ["poetry install"]
+      }
+    }
   }
 }
