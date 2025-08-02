@@ -1,0 +1,10 @@
+{
+  "web": {
+    "flask-empty": {
+      "name": "Базовый проект на Flask",
+      "init_commands": [
+        "poetry install"
+      ]
+    }
+  }
+}
