@@ -1,0 +1,155 @@
+{% extends 'base/dash_base.html' %}
+
+{% block title %} Заявки на LoloFestMC {% endblock %}
+
+{% block content %}
+	<main class="content">
+<style>
+
+ .table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1f1f2e;
+    color: #eeeeee;
+    border-radius: 1rem;
+    overflow: hidden;
+    font-size: 0.95rem;
+}
+
+.table thead {
+    background-color: #2a2a3d;
+    font-weight: bold;
+}
+
+.table th, .table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #34344a;
+}
+
+.table tbody tr:hover {
+    background-color: #2a2a3d;
+}
+
+.table code {
+    font-family: monospace;
+    font-size: 0.85rem;
+    background-color: #2a2a3d;
+    color: #28a745;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+}
+
+.btn.btn-success {
+    background-color: #2e8b57;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+.btn.btn-success:hover {
+    background-color: #247247;
+}
+
+.card {
+    background-color: #1f1f2e;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    color: #eeeeee;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #eeeeee;
+    margin-bottom: 1.5rem;
+}
+
+.text-muted {
+    color: #cccccc !important;
+}
+.cert-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1f1f2e; /* тёмный фон таблицы */
+    color: #eeeeee; /* светлый текст */
+    border-radius: 1rem;
+    overflow: hidden;
+    font-size: 0.95rem;
+}
+
+.cert-table thead {
+    background-color: #2a2a3d;
+    font-weight: bold;
+    color: #eeeeee;
+}
+
+.cert-table th, .cert-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #34344a;
+}
+
+.cert-table tbody tr:hover {
+    background-color: #2a2a3d;
+}
+
+.cert-table code {
+    font-family: monospace;
+    font-size: 0.85rem;
+    background-color: #2a2a3d;
+    color: #28a745;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+}
+
+
+</style>
+
+<div class="container-fluid py-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <h2 class="mb-4">Личные сертификаты</h2>
+
+
+                    <div class="table-responsive">
+                        <table class="cert-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Отпечаток</th>
+                                    <th scope="col">Выдан</th>
+                                    <th scope="col">Истекает</th>
+                                    <th scope="col">Файл</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                    <tr>
+                                        <td><code>483846bbd7669feb4d10e0b81e2430cdbe6f6d68</code></td>
+                                        <td>10.08.2025 15:33</td>
+                                        <td>09.08.2028 15:33</td>
+                                        <td>
+
+                                                <a href="/certs/483846bbd7669feb4d10e0b81e2430cdbe6f6d68.p12" class="btn btn-sm btn-success">
+                                                    Скачать
+                                                </a>
+
+                                        </td>
+                                    </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    </main>
+{% endblock %}

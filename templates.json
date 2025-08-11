@@ -5,6 +5,10 @@
       "flask-empty": {
         "name": "Web-приложение на Python (Flask)",
         "init_commands": ["poetry install"]
+      },
+      "flask-dashboard-adminkit": {
+        "name": "Основа админ-панели в стиле Askiphy Industries на Python (Flask). На основе AdminKit",
+        "init_commands": ["poetry install"]
       }
     }
   },
